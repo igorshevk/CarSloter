@@ -1,0 +1,435 @@
+@import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
+
+.main-body {
+    font-family: 'Lato', sans-serif;
+    background: #F8F7FC;
+}
+
+.wrapper {
+    margin: auto;
+    /*width: 100%;*/
+}
+
+back{
+	margin: 15px 10px;
+    float: left;
+    cursor:pointer;    
+}
+
+back:before{
+	content: '';
+    background-image: url(img/back.png);
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: -10px;
+    margin-right: 4px; 
+    transition: .3s;
+	left: 0px;
+}
+
+back:hover:before{
+	left: -5px;
+}
+
+back a, back a:hover, back a:active, back a:focus {
+    color: black;
+}
+
+.step_wrap{
+    float: left;
+    width: 100%;
+}
+
+.step_wrap .step_head{
+    float: left;
+    width: 100%;
+    padding:  15px;
+}
+
+.step_wrap .step_head h1{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.step_wrap .step_block{
+    /*margin-top:15px;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+    background: white; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.05);*/
+    float: left;
+    width: 100%;
+    background: white;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom:0px;
+}
+
+.step_wrap .step_block:nth-child(odd) .step_lft{
+    float: right;
+    right: 50px;
+}
+
+.step_wrap .step_block:nth-child(odd) .step_rgt{
+    float: left;
+}
+
+.step_wrap .step_block .step_lft{
+    float: left;
+    width: 32%;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+    padding-left: 30px;
+}
+
+.step_wrap .step_block .step_lft h2{
+    font-size: 30px;
+    float: left;
+    font-weight: 400;
+    line-height: 40px;
+    color: #008C95;
+}
+
+.step_wrap .step_block .step_lft p{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+.step_wrap .step_block .step_lft p a{
+    color: #008C95;
+    font-weight: 600;
+}
+
+.step_wrap .step_block .step_lft h2 i{
+    font-style: normal;
+    /*background: white;
+    border: 2px solid #008C95;
+    color: #008C95;
+    width: 50px;
+    background: white;
+    height: 50px;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    font-size: 24px;
+    margin-right: 15px;
+    display: block;
+    float: left;
+    margin-right: calc(100% - 50px);*/
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    border: 2px solid #008C95;
+    border-radius: 100%;
+    color: #008C95;
+}
+
+.step_wrap .step_block .step_rgt{
+    float: right;
+    width: 50%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.step_wrap .step_block .step_rgt img{
+    width: 100%;
+}
+
+.wrapper .header {
+    float: left;
+    width: 100%;
+}
+
+.wrapper .header ul {
+    float: left;
+    width: 100%;
+}
+
+.wrapper .header ul li {
+    float: left;
+    list-style-type: none;
+}
+
+.wrapper .header ul li a {
+    text-decoration: none;
+    color: #6DC4B7;
+    min-width: 150px;
+    display: block;
+    background: white;
+    padding: 10px 15px;
+    text-align: left;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .1);
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    position: relative;
+    padding-right: 70px;
+}
+
+.wrapper .header ul li a i {
+    position: absolute;
+    right: 0px;
+    font-style: initial;
+    background: #6DC4B7;
+    color: white;
+    width: 42px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    top: 0;
+    margin: 4px;
+    border-radius: 50px;
+}
+
+.wrapper .header ul li:nth-child(1) a,
+.wrapper .header ul li:nth-child(5) a {
+    text-align: center;
+    padding-right: 10px;
+}
+
+.wrapper .header ul li:nth-child(5) a {
+    background: #49DF09;
+    color: white;
+}
+
+.wrapper .header_new {
+    float: left;
+    width: 100%;
+}
+
+.wrapper .header_new li {
+    float: left;
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+.wrapper .header_new li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 25px;
+    position: relative;
+    text-align: center;
+    background: #0EB0BB;
+}
+
+
+.wrapper .header_new li.active a{
+    color: #0EB0BB;
+    background:white; 
+    font-weight: 600;
+}
+
+.wrapper .header_new li:first-child a{
+    border-radius: 5px 0px 0px 0px;
+}
+
+.wrapper .header_new li:last-child a{
+    border-radius:  0px 5px 0px 0px;
+}
+
+.wrapper .header_new li a i{
+    font-style: normal;
+}
+
+.tab-content {
+    clear: both;
+}
+
+#myProfile {
+    padding-top: 20px;
+}
+/*
+.wrapper .header_new ul li:nth-child(1) a,
+.wrapper .header_new ul li:nth-child(5) a {
+    text-align: center;
+    padding-right: 10px;
+}
+
+.wrapper .header_new ul li:nth-child(5) a {
+    background: #49DF09;
+    color: white;
+}*/
+
+.table_wrap {
+    float: left;
+    background: white;
+    width: 100%;
+    /*margin-top: 20px;*/
+    border-radius: 5px;
+}
+
+.table_wrap table {}
+
+.table_wrap table tr th {
+    color: #0EB0BB;
+    border-bottom: 1px solid #E5F5F5;
+}
+
+.table_wrap table tr th,
+.table_wrap table tr td {
+    text-align: left;
+    padding: 10px 15px;
+}
+
+.table_wrap table tr td .img_holder {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-position: center;
+}
+
+.table_wrap table tbody tr:nth-child(even){
+    background:#F3F8FB; 
+}
+
+.table_wrap
+@media screen and (max-width:918px) {
+    .table_wrap {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .table_wrap table tr th,
+    .table_wrap table tr td {
+        white-space: nowrap;
+    }
+
+    .wrapper .header ul {
+        float: left;
+        display: flex;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .wrapper .header ul li a {
+        white-space: nowrap;
+    }
+
+    .wrapper .header ul li a {
+        white-space: nowrap;
+        margin: 10px;
+        margin-bottom: 0;
+    }
+} table tr td img[src$='.gif'] {
+    width: 50px;
+    float: left;
+}
+
+.loading_gif{
+    background-image: url(img/loading.gif);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: 300%;
+    display: inline-block;
+    position: relative;
+    margin-top: -50px;
+    top: 10px;
+    margin-left: 6px;
+    border-radius: 50%;
+}
+
+.check{
+    background-image: url(img/check.png);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+    position: relative;
+    margin-top: -50px;
+    top: 10px;
+    margin-left: 6px;
+}
+
+.cancel{
+    background-image: url(img/cancel.png);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+    position: relative;
+    margin-top: -50px;
+    top: 10px;
+    margin-left: 6px;
+}
+
+
+@media screen and (max-width:768px){
+    .step_wrap .step_block .step_lft, .step_wrap .step_block .step_rgt{
+        width: 100%;
+    }
+
+    .step_wrap .step_block .step_lft {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        position: relative;
+        padding: 21px;
+        padding-top: 0;
+    }
+
+    .step_wrap .step_head h1, .step_wrap .step_block .step_lft h2{
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width:918px) {
+    .table_wrap {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .table_wrap table tr th,
+    .table_wrap table tr td {
+        white-space: nowrap;
+    }
+
+    .wrapper .header_new ul {
+        float: left;
+        display: flex;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .wrapper .header_new ul li a {
+        white-space: nowrap;
+    }
+
+    .wrapper .header_new ul li a {
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+}

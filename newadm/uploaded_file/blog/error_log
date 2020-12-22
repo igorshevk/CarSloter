@@ -1,0 +1,10 @@
+[23-Mar-2020 13:20:32 America/New_York] PHP Notice:  Undefined variable: conn in /home/carpacso/public_html/newadm/uploaded_file/blog/h3.php on line 16
+[23-Mar-2020 13:20:32 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/carpacso/public_html/newadm/uploaded_file/blog/h3.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/carpacso/public_html/newadm/uploaded_file/blog/h3.php on line 16
+[30-Mar-2020 00:59:18 America/New_York] PHP Notice:  Undefined variable: conn in /home/carpacso/public_html/newadm/uploaded_file/blog/h3.php on line 16
+[30-Mar-2020 00:59:18 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/carpacso/public_html/newadm/uploaded_file/blog/h3.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/carpacso/public_html/newadm/uploaded_file/blog/h3.php on line 16
